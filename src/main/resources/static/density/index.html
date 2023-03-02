@@ -12,27 +12,39 @@
 	<script src="js/ie/respond.min.js"></script>
 	<![endif]-->
 	<!-- css -->
-	<link href="css/common.css" rel="stylesheet" type="text/css">
-	<link href="css/style.css" rel="stylesheet" type="text/css">
+	
+	
 	
 	<!-- javascript -->	
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
-	<script type="text/javascript" src="js/common.js"></script>
-	<script type="text/javascript" src="js/jquery.rwdImageMaps.js"></script>
+<!--	<script type="text/javascript" src="js/common.js"></script>-->
+	<!-- <script type="text/javascript" src="/js/jquery.rwdImageMaps.js"></script> -->
+  <script type="module" crossorigin src="/assets/density-e21ea9ce.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/style-1792918b.js">
+  <link rel="modulepreload" crossorigin href="/assets/runtime-dom.esm-bundler-88f1d9c0.js">
+  <link rel="stylesheet" href="/assets/style-8b649750.css">
 </head>
 <body>
 
 <div class="gnbbox subgnb">
 	<div class="container">
 		<h1 class="col-md-4 m-tb1">
-			<a href="index.html"><img src="images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a>
+<!--			<a href="index.html"><img src="images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a>-->
+			<!-- <a th:href="@{/}"><img src="/images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a> -->
+      <a href="/"><img src="/assets/logo-23f2f356.png" alt="한국 남부발전(주)" class="img-fluid"></a>
 		</h1>
 
 		<div class="col-md-8 m-tb1">
 			<ul class="gnb ">
-				<li class="on"><a href="atmosphere.html">대기배출농도</a></li>
-				<li><a href="around.html">주변환경농도</a></li>
-				<li><a href="emissions.html">대기배출량</a></li>
+<!--				<li class="on"><a href="atmosphere.html">대기배출농도</a></li>-->
+<!--				<li><a href="around.html">주변환경농도</a></li>-->
+<!--				<li><a href="emissions.html">대기배출량</a></li>-->
+				<!-- <li class="on"><a th:href="@{/menu1}">대기배출농도</a></li>
+				<li><a th:href="@{/menu2}">주변환경농도</a></li>
+				<li><a th:href="@{/menu3}">대기배출량</a></li> -->
+        <li class="on"><a href="/density/">대기배출농도</a></li>
+				<li><a href="/around/">주변환경농도</a></li>
+				<li><a href="/discharge/">대기배출량</a></li>
 			</ul>
 		</div>
 	</div>
@@ -40,7 +52,8 @@
 
 
 <div class="container">
-	<ul class="overflow_h subtab">
+  <div id="app">
+	<!-- <ul class="overflow_h subtab">
 		<li class="on"><a href="">신인천<span class="br"> 빛드림본부</a></li>
 		<li><a href="">영월<span class="br"> 빛드림본부</a></li>
 		<li><a href="">안동<span class="br"> 빛드림본부</a></li>
@@ -87,7 +100,8 @@
 			</tr>
 		  </tbody>
 		</table>
-	</div>
+	</div> -->
+  </div>
 
 	<p class="txt_center col-point m-tb3">실시간 공개되는 대기배출농도는 한국환경공단의 확정 절차 이전 자료로 법적 증빙자료로 활용할 수 없습니다.</p>
 
@@ -104,7 +118,7 @@
 
 	<div class="page-rating">
 		<div class="title txt_center"> 
-				<p class="m-b1"><img src="images/title.png" alt=""></p>
+				<p class="m-b1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAANCAYAAACtpZ5jAAAABHNCSVQICAgIfAhkiAAAASBJREFUOE+1VDtOw0AQfWNfgQ4naem8NKmIFAd6QkdHEbogJTeIrVwgkUUNOQncgPUd4BjeYcZRrEVR7FB4mt31vvn4zc4jeHY5fjVBUC6YyRDBMMMSsXUu3P58zq1CP77ZuBILYhgIBoJhgg1CbJOIKowaHTbRJE/lsPIT+XsG0t3bi+Q7jZG7NBlQVgduC6rA6XSIh/vhqbz1dykgux1QSvvfd19NHv3+BdbZY2vQmoYQ19RL8nch5KnJ63l2h9HN1dmBBbijKMmlQYibvLRarfps06b3JrnQ0mzStDbI0X1XFRfdcdzZq1ByOnnH/5i8TJvYMp3VcPwZaT1UtJBbyjNRrYhFKwoJZB0HG18ruMRSNEK1Ipa1kNVSiI2vFb8bMG6kXw2C2gAAAABJRU5ErkJggg==" alt=""></p>
 				<div class="people inline-block"> 
 					<dl> 
 						<dt>담당자 </dt> 
@@ -152,7 +166,7 @@
 <div class="footer">
 	<div class="container overflow_h p-tb3">
 		<div class="col-md-6 font_light">
-			<p><img src="images/logo.png" alt="한국남부발전(주)" class="img-fluid"></p>
+			<p><img src="/assets/logo-23f2f356.png" alt="한국남부발전(주)" class="img-fluid"></p>
 			<p class="m-t1">부산광역시 남구 문현금융로 40(문현동, 부산국제금융센터)</p>
 			<p><span class="col-point">대표전화</span>  070-7713-8000 &nbsp;&nbsp;&nbsp;&nbsp;<span class="col-point">팩스</span>  070-7713-8272</p>
 		</div>
@@ -196,3 +210,18 @@
 
 </body>
 </html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>density</h1>
+    <div id="app"></div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html> -->

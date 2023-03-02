@@ -17,7 +17,7 @@
 	
 	<!-- javascript -->	
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
-	<script type="text/javascript" src="js/common.js"></script>
+<!--	<script type="text/javascript" src="js/common.js"></script>-->
 	<script type="text/javascript" src="js/jquery.rwdImageMaps.js"></script>
 </head>
 <body>
@@ -25,14 +25,18 @@
 <div class="gnbbox subgnb">
 	<div class="container">
 		<h1 class="col-md-4 m-tb1">
-			<a href="index.html"><img src="images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a>
+<!--			<a href="index.html"><img src="images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a>-->
+			<a th:href="@{/}"><img src="images/logo.png" alt="한국 남부발전(주)" class="img-fluid"></a>
 		</h1>
 
 		<div class="col-md-8 m-tb1">
 			<ul class="gnb ">
-				<li><a href="atmosphere.html">대기배출농도</a></li>
-				<li class="on"><a href="around.html">주변환경농도</a></li>
-				<li><a href="emissions.html">대기배출량</a></li>
+<!--				<li><a href="atmosphere.html">대기배출농도</a></li>-->
+<!--				<li class="on"><a href="around.html">주변환경농도</a></li>-->
+<!--				<li><a href="emissions.html">대기배출량</a></li>-->
+				<li><a th:href="@{/menu1}">대기배출농도</a></li>
+				<li class="on"><a th:href="@{/menu2}">주변환경농도</a></li>
+				<li><a th:href="@{/menu3}">대기배출량</a></li>
 			</ul>
 		</div>
 	</div>
