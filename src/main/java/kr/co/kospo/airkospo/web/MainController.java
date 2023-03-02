@@ -9,7 +9,29 @@ public class MainController {
 	
 	@GetMapping("/")
 	public String home(Model model) {
-		model.addAttribute("test", "테스트 값");
+		System.out.println("/");
+		model.addAttribute("test", "루트");
 		return "index";
+	}
+	
+	@GetMapping("/density")
+	public String density(Model model) {
+		System.out.println("/density");
+		model.addAttribute("test", "대기배출농도");
+		return "density/index";
+	}
+	
+	@GetMapping("/around")
+	public String around(Model model) {
+		System.out.println("/around");
+		model.addAttribute("test", "주변환경농도");
+		return "around/index";
+	}
+	
+	@GetMapping("/discharge")
+	public String discharge(Model model) {
+		System.out.println("/discharge");
+		model.addAttribute("test", "대기배출량");
+		return "discharge/index";
 	}
 }
